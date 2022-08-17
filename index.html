@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Vocabulario</title>
+</head>
+
+<body>
+    <main class="caja-principal">
+        <h1 class="titulo">Vocabulario del libro</h1>
+        <table class="tabla-palabras" id="cuadro">
+            <thead>
+                <tr class="tehead">
+                    <th>Ucraniano</th>
+                    <th>Español</th>
+                    <th>Género</th>
+                    <th>Plural</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </main>
+
+
+    <script>
+        var listaPalabras = [
+            ["Мак", "Amapola", "Masculino", "Маки"],
+            ["Мама", "Mamá", "Femenino", "Матері"],
+            ["Кава", "Café", "Femenino", "Кави"],
+            ["Кафе", "Cafetería", "Neutro", "Кафе"],
+            ["Баба", "Abuela", "Femenino", "Баби"],
+            ["Папка", "Carpeta", "Femenino", "Папки"],
+            ["Буква", "Letra", "Femenino", "Букви"],
+            ["Дуб", "Roble", "Masculino", "Дуби"],
+            ["Фото", "Foto", "Neutro", "Фото"],
+            ["Тато", "Papá", "Masculino", "Тати"],
+            ["Вода", "Agua", "Femenino", "Вода"],
+            ["Онук", "Nieto", "Masculino", "Онуки"],
+            ["Кавун", "Sandía", "Masculino", "Кавуни"],
+            ["Фонтана", "Fuente", "Femenino", "Фонтани"],
+            ["Сад", "Jardín", "Masculino", "Сади"],
+            ["Син", "Hijo", "Masculino", "Сини"],
+            ["Ваза", "Jarrón", "Femenino", "Вази"],
+            ["Завод", "Fábrica", "Masculino", "Заводи"],
+            ["Будинок", "Casa", "Masculino", "Будинки"],
+            ["Дитина", "Niño/niña", "Femenino", "Діти"],
+            ["Лава", "Banco", "Femenino", "Лави"],
+            ["Лист", "Carta", "Masculino", "Листи"],
+            ["Дзвоник", "Campana", "Masculino", "Дзвоники"],
+            ["Булка", "Pan", "Femenino", "Булка"],
+            ["Масло", "Manteca", "Neutro", "Масло"],
+            ["Молоко", "Leche", "Neutro", "Молоко"],
+            ["Дід", "Abuelo", "Masculino", "Діди"],
+            ["Студент", "Estudiante", "Masculino", "Студенти"],
+            ["Фізик", "Físico", "Masculino", "Фізики"],
+            ["Пілот", "Piloto", "Masculino", "Пілоти"],
+            ["Стіл", "Mesa", "Masculino", "Столи"],
+            ["Стілець", "Silla", "Masculino", "Стілці"],
+            ["Кімната", "Habitación", "Femenino", "Кімнати"],
+            ["Вікно", "Ventana", "Neutro", "Вікна"],
+            ["Сніданок", "Desayuno", "Masculino", "Сніданки"],
+            ["Обід", "Almuerzo", "Masculino", "Обіди"],
+            ["Місто", "Ciudad", "Neutro", "Міста"],
+            ["Інститут", "Instituto", "Masculino", "Інститути"],
+            ["Басейн", "Piscina", "Masculino", "Басейни"],
+            ["Музей", "Museo", "Masculino", "Музеї"],
+            ["Водій", "Chofer", "Masculino", "Водії"],
+            ["Яблуко", "Manzana", "Neutro", "Яблука"],
+            ["Юнак", "Joven", "Masculino", "Юнаки"],
+            ["Киянин", "", "Masculino", "Кияни"],
+            ["Дядько", "Tío", "Masculino", "Дядьки"],
+            ["Костюм", "Traje", "Masculino", "Костюми"],
+            ["Сукня", "Vestido", "Femenino", "Сукні"],
+            ["Вулиця", "Calle", "Femenino", "Вулиці"],
+            ["Клас", "Aula", "Masculino", "Класи"],
+            ["М'ясо", "Carne", "Neutro", "М'яса"],
+            ["Сім'я", "Familia", "Femenino", "Сім'ї"],
+            ["Шафа", "Armario", "Femenino", "Шафи"],
+            ["Шуба", "Tapado", "Femenino", "Шуби"],
+            ["Шапка", "Gorro", "Femenino", "Шапки"],
+            ["Зошит", "Cuaderno", "Masculino", "Зошити"],
+            ["Книжка", "Libro", "Femenino", "Книжки"],
+            ["Школа", "Escuela", "Femenino", "Школи"],
+            ["Дошка", "Pizarrón", "Femenino", "Дошки"],
+            ["Ложка", "Cuchara", "Femenino", "Ложки"],
+            ["Виделка", "Tenedor", "Femenino", "Виделки"],
+            ["Ніж", "Cuchillo", "Masculino", "Ножі"],
+            ["Чашка", "Taza", "Femenino", "Чашки"],
+            ["Дочка", "Hija", "Femenino", "Дочки"],
+            ["Дівчина", "Muchacha", "Femenino", "дівчата"],
+            ["Учень", "Estudiante", "Masculino", "Учні"],
+            ["Викладач", "Profesor", "Masculino", "Викладачі"],
+            ["Піджак", "Saco", "Masculino", "Піджаки"]
+
+        ];
+
+        table = document.getElementById("cuadro");
+
+        for (var i = 0; i < listaPalabras.length; i++) {
+            var filaNueva = table.insertRow(table.length);
+
+            for (var j = 0; j < 4; j++) {
+                var celda = filaNueva.insertCell(j);
+                celda.innerHTML = listaPalabras[i][j];
+            }
+        }
+
+    </script>
+</body>
+
+</html>

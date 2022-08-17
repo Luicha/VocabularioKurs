@@ -1,0 +1,36 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 50px 50px;
+}
+
+.titulo {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+table {
+  margin: 40px 0;
+  width: 50%;
+  border-radius: 5px;
+}
+
+th {
+  border: 1px solid black;
+  padding: 8px 15px;
+  background: royalblue;
+  color: white;
+  font-weight: bold;
+}
+
+tr {
+
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px 15px;
+  background: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+
+}
