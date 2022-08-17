@@ -16,6 +16,7 @@
 <body>
     <main class="caja-principal">
         <h1 class="titulo">Vocabulario del libro</h1>
+        <input type="text" id="editText" onkeyup="buscar()" placeholder="Buscar palabra...">
         <table class="tabla-palabras" id="cuadro">
             <thead>
                 <tr class="tehead">
@@ -30,7 +31,6 @@
             </tbody>
         </table>
     </main>
-
 
     <script>
         var listaPalabras = [
@@ -112,6 +112,32 @@
             for (var j = 0; j < 4; j++) {
                 var celda = filaNueva.insertCell(j);
                 celda.innerHTML = listaPalabras[i][j];
+            }
+        }
+
+        //Copiar
+        function buscar() {
+            // Declare variables
+            var input, filter, table2, tr, ucra, espa, i, txtValue, txtValue2;
+            input = document.getElementById("editText");
+            filter = input.value.toUpperCase();
+            table2 = document.getElementById("cuadro");
+            tr = table2.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                ucra = tr[i].getElementsByTagName("td")[0];
+                espa = tr[i].getElementsByTagName("td")[1];
+                if (ucra) {
+                    txtValue = ucra.textContent || ucra.innerText;
+                    txtValue2 = espa.textContent || espa.innerText;
+
+                    if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
             }
         }
 

@@ -8,6 +8,18 @@ body {
   font-weight: bold;
 }
 
+#editText {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 50%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-top: 16px;
+}
+
+
 table {
   margin: 40px 0;
   width: 50%;
@@ -22,15 +34,16 @@ th {
   font-weight: bold;
 }
 
-tr {
-
-}
-
 td {
   border: 1px solid black;
   padding: 8px 15px;
   background: white;
   color: black;
   font-family: "Poppins", sans-serif;
-
 }
+
+td:hover{
+  /* Add a grey background color to the table header and on hover */
+  background-color: #ddb11fbe;
+}
+
