@@ -1,43 +1,58 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 50px 50px;
+  background: #e5e5e5;
 }
 
 .titulo {
   font-size: 36px;
   font-weight: bold;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input {
+  text-align: center;
+  margin: auto auto;
+  width: 100%;
+  background: royalblue;
+  border-radius: 12px 12px 0 0;
 }
 
 #editText {
-  background-image: url('./img/searchblue.png'); /* Add a search icon to input */
+  background-image: url("./img/searchblue.png"); /* Add a search icon to input */
   background-size: contain; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   background-position: 5px;
-  width: 25%; /* Full-width */
+  width: 80%; /* Full-width */
   font-size: 20px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   border-radius: 20px;
-  margin-top: 16px;
   text-indent: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  margin: 8px;
 }
 
 #editText:hover {
-  background: rgba(245, 183, 14, 0.473);
-  background-image: url('./img/searchgreen.png');
+  background: rgba(255, 218, 54, 0.877);
+  background-image: url("./img/searchgreen.png");
   background-size: contain; /* Position the search icon */
   background-repeat: no-repeat;
   background-position: 5px;
   transition: 400ms;
 }
 
+.div-cuadro {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
 
 table {
-  margin: 40px 0;
-  width: 50%;
+  margin: 0 0;
+  width: 100%;
   border-radius: 5px;
-  
 }
 
 th {
@@ -53,13 +68,61 @@ td {
   padding: 8px 15px;
   background: white;
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: large;
 }
 
-td:hover{
+td:hover {
   /* Add a grey background color to the table header and on hover */
   background-color: #ffdb0ede;
   transition: 400ms;
 }
 
+.izquierda {
+  width: 49%;
+  float: left;
+}
+
+.derecha {
+  width: 49%;
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: auto;
+    margin: 0 0;
+  }
+
+  body {
+    margin: 8px 8px;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+  .input {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .izquierda {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    position: sticky;
+    top: 0;
+  }
+
+  .input.fixed {
+    color: aqua;
+  }
+
+  .derecha {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

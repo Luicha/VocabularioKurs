@@ -16,20 +16,33 @@
 <body>
     <main class="caja-principal">
         <h1 class="titulo">Vocabulario del libro</h1>
-        <input type="text" id="editText" onkeyup="buscar()" placeholder="Buscar palabra...">
-        <table class="tabla-palabras" id="cuadro">
-            <thead>
-                <tr class="tehead">
-                    <th>Ucraniano</th>
-                    <th>Español</th>
-                    <th>Género</th>
-                    <th>Plural</th>
-                </tr>
-            </thead>
-            <tbody>
+        
+        <section class="izquierda">
+            <div class="input">
+                <input type="text" id="editText" onkeyup="buscar()" placeholder="Buscar palabra...">
+            </div>
+            <div class="div-cuadro">
+                <table class="tabla-palabras" id="cuadro">
+                    <thead>
+                        <tr class="tehead">
+                            <th>Ucraniano</th>
+                            <th>Español</th>
+                            <th>Género</th>
+                            <th>Plural</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-            </tbody>
-        </table>
+        <section class="derecha">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/0v6qC58nene2hpsO6MQotF?utm_source=generator&theme=0" width="100%"
+                height="380" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </section>
     </main>
 
     <script>
