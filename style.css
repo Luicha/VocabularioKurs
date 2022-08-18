@@ -4,6 +4,11 @@ body {
   background: #e5e5e5;
 }
 
+.caja-principal {
+  width: 100%;
+  height: 800px;
+}
+
 .titulo {
   font-size: 36px;
   font-weight: bold;
@@ -15,8 +20,13 @@ body {
   text-align: center;
   margin: auto auto;
   width: 100%;
-  background: royalblue;
+  background: #006DDA;
   border-radius: 12px 12px 0 0;
+}
+
+.tehead {
+  position: sticky;
+  top: 0;
 }
 
 #editText {
@@ -35,7 +45,7 @@ body {
 }
 
 #editText:hover {
-  background: rgba(255, 218, 54, 0.877);
+  background: #F3D34A;
   background-image: url("./img/searchgreen.png");
   background-size: contain; /* Position the search icon */
   background-repeat: no-repeat;
@@ -44,13 +54,19 @@ body {
 }
 
 .div-cuadro {
-  height: 100%;
+  position: relative;
   width: 100%;
   overflow: auto;
+  max-height: 800px;
+}
+
+.icono-filtro {
+  font-size: 24px;
+  text-align: end;
 }
 
 table {
-  margin: 0 0;
+  margin: 0 0 0 0;
   width: 100%;
   border-radius: 5px;
 }
@@ -58,9 +74,43 @@ table {
 th {
   border: 1px solid black;
   padding: 8px 15px;
-  background: royalblue;
+  background: #006DDA;
   color: white;
   font-weight: bold;
+}
+
+th:nth-child(-n+2):hover {
+  color: #F3D34A;
+  cursor: pointer; 
+}
+
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+th .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+th:hover .tooltiptext {
+  visibility: visible;
 }
 
 td {
@@ -72,10 +122,14 @@ td {
   font-size: large;
 }
 
-td:hover {
-  /* Add a grey background color to the table header and on hover */
-  background-color: #ffdb0ede;
+tr:hover td {
+  background-color: #ffdb0ede; /*#F3D34A*/ /*ffdb0ede*/
   transition: 400ms;
+}
+
+.col-genero {
+  width: 10%;
+  text-align: center;
 }
 
 .izquierda {
@@ -87,6 +141,35 @@ td:hover {
   width: 49%;
   float: right;
 }
+
+.spufi {
+  margin-bottom: 20px;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #151515 #006DDA;
+    /*
+    scrollbar-color: #006DDA #F3D34A;
+    */
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #151515;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #F3D34A;
+    border-radius: 8px;
+    border: 3px none #000000;
+  }
 
 @media screen and (max-width: 480px) {
   main {
@@ -117,8 +200,9 @@ td:hover {
     top: 0;
   }
 
-  .input.fixed {
-    color: aqua;
+  .tehead {
+    position: sticky;
+    top: 0;
   }
 
   .derecha {

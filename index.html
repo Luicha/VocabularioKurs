@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./js/badge.js" position="right" async></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -15,9 +16,9 @@
 
 <body>
     <main class="caja-principal">
-        <h1 class="titulo">Vocabulario del libro</h1>
-        
+
         <section class="izquierda">
+            <h1 class="titulo">Vocabulario del libro 🤓</h1>
             <div class="input">
                 <input type="text" id="editText" onkeyup="buscar()" placeholder="Buscar palabra...">
             </div>
@@ -25,9 +26,9 @@
                 <table class="tabla-palabras" id="cuadro">
                     <thead>
                         <tr class="tehead">
-                            <th>Ucraniano</th>
-                            <th>Español</th>
-                            <th>Género</th>
+                            <th onclick="sortTable(0)">Ucraniano <span class="icono-filtro">🔃</span><span class="tooltiptext">Ordenar</span></th>
+                            <th onclick="sortTable(1)">Español <span class="icono-filtro">🔃</span><span class="tooltiptext">Ordenar</span></th>
+                            <th class="col-genero">Género</th>
                             <th>Plural</th>
                         </tr>
                     </thead>
@@ -38,123 +39,38 @@
         </section>
 
         <section class="derecha">
-            <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/0v6qC58nene2hpsO6MQotF?utm_source=generator&theme=0" width="100%"
-                height="380" frameBorder="0" allowfullscreen=""
+            <h1 class="titulo">Musiquita 🪗</h1>
+            <iframe class="spufi" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/0v6qC58nene2hpsO6MQotF?utm_source=generator&theme=0"
+                width="100%" height="380" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <h1 class="titulo">Algo más 🐮</h1>
         </section>
     </main>
-
-    <script>
-        var listaPalabras = [
-            ["Мак", "Amapola", "Masculino", "Маки"],
-            ["Мама", "Mamá", "Femenino", "Матері"],
-            ["Кава", "Café", "Femenino", "Кави"],
-            ["Кафе", "Cafetería", "Neutro", "Кафе"],
-            ["Баба", "Abuela", "Femenino", "Баби"],
-            ["Папка", "Carpeta", "Femenino", "Папки"],
-            ["Буква", "Letra", "Femenino", "Букви"],
-            ["Дуб", "Roble", "Masculino", "Дуби"],
-            ["Фото", "Foto", "Neutro", "Фото"],
-            ["Тато", "Papá", "Masculino", "Тати"],
-            ["Вода", "Agua", "Femenino", "Вода"],
-            ["Онук", "Nieto", "Masculino", "Онуки"],
-            ["Кавун", "Sandía", "Masculino", "Кавуни"],
-            ["Фонтана", "Fuente", "Femenino", "Фонтани"],
-            ["Сад", "Jardín", "Masculino", "Сади"],
-            ["Син", "Hijo", "Masculino", "Сини"],
-            ["Ваза", "Jarrón", "Femenino", "Вази"],
-            ["Завод", "Fábrica", "Masculino", "Заводи"],
-            ["Будинок", "Casa", "Masculino", "Будинки"],
-            ["Дитина", "Niño/niña", "Femenino", "Діти"],
-            ["Лава", "Banco", "Femenino", "Лави"],
-            ["Лист", "Carta", "Masculino", "Листи"],
-            ["Дзвоник", "Campana", "Masculino", "Дзвоники"],
-            ["Булка", "Pan", "Femenino", "Булка"],
-            ["Масло", "Manteca", "Neutro", "Масло"],
-            ["Молоко", "Leche", "Neutro", "Молоко"],
-            ["Дід", "Abuelo", "Masculino", "Діди"],
-            ["Студент", "Estudiante", "Masculino", "Студенти"],
-            ["Фізик", "Físico", "Masculino", "Фізики"],
-            ["Пілот", "Piloto", "Masculino", "Пілоти"],
-            ["Стіл", "Mesa", "Masculino", "Столи"],
-            ["Стілець", "Silla", "Masculino", "Стілці"],
-            ["Кімната", "Habitación", "Femenino", "Кімнати"],
-            ["Вікно", "Ventana", "Neutro", "Вікна"],
-            ["Сніданок", "Desayuno", "Masculino", "Сніданки"],
-            ["Обід", "Almuerzo", "Masculino", "Обіди"],
-            ["Місто", "Ciudad", "Neutro", "Міста"],
-            ["Інститут", "Instituto", "Masculino", "Інститути"],
-            ["Басейн", "Piscina", "Masculino", "Басейни"],
-            ["Музей", "Museo", "Masculino", "Музеї"],
-            ["Водій", "Chofer", "Masculino", "Водії"],
-            ["Яблуко", "Manzana", "Neutro", "Яблука"],
-            ["Юнак", "Joven", "Masculino", "Юнаки"],
-            ["Киянин", "Kievita", "Masculino", "Кияни"],
-            ["Дядько", "Tío", "Masculino", "Дядьки"],
-            ["Костюм", "Traje", "Masculino", "Костюми"],
-            ["Сукня", "Vestido", "Femenino", "Сукні"],
-            ["Вулиця", "Calle", "Femenino", "Вулиці"],
-            ["Клас", "Aula", "Masculino", "Класи"],
-            ["М'ясо", "Carne", "Neutro", "М'яса"],
-            ["Сім'я", "Familia", "Femenino", "Сім'ї"],
-            ["Шафа", "Armario", "Femenino", "Шафи"],
-            ["Шуба", "Tapado", "Femenino", "Шуби"],
-            ["Шапка", "Gorro", "Femenino", "Шапки"],
-            ["Зошит", "Cuaderno", "Masculino", "Зошити"],
-            ["Книжка", "Libro", "Femenino", "Книжки"],
-            ["Школа", "Escuela", "Femenino", "Школи"],
-            ["Дошка", "Pizarrón", "Femenino", "Дошки"],
-            ["Ложка", "Cuchara", "Femenino", "Ложки"],
-            ["Виделка", "Tenedor", "Femenino", "Виделки"],
-            ["Ніж", "Cuchillo", "Masculino", "Ножі"],
-            ["Чашка", "Taza", "Femenino", "Чашки"],
-            ["Дочка", "Hija", "Femenino", "Дочки"],
-            ["Дівчина", "Muchacha", "Femenino", "дівчата"],
-            ["Учень", "Estudiante", "Masculino", "Учні"],
-            ["Викладач", "Profesor", "Masculino", "Викладачі"],
-            ["Піджак", "Saco", "Masculino", "Піджаки"]
-
-        ];
-
-        table = document.getElementById("cuadro");
-
-        for (var i = 0; i < listaPalabras.length; i++) {
-            var filaNueva = table.insertRow(table.length);
-
-            for (var j = 0; j < 4; j++) {
-                var celda = filaNueva.insertCell(j);
-                celda.innerHTML = listaPalabras[i][j];
-            }
-        }
-
-        //Copiar
-        function buscar() {
-            // Declare variables
-            var input, filter, table2, tr, ucra, espa, i, txtValue, txtValue2;
-            input = document.getElementById("editText");
-            filter = input.value.toUpperCase();
-            table2 = document.getElementById("cuadro");
-            tr = table2.getElementsByTagName("tr");
-
-            // Loop through all table rows, and hide those who don't match the search query
-            for (i = 0; i < tr.length; i++) {
-                ucra = tr[i].getElementsByTagName("td")[0];
-                espa = tr[i].getElementsByTagName("td")[1];
-                if (ucra) {
-                    txtValue = ucra.textContent || ucra.innerText;
-                    txtValue2 = espa.textContent || espa.innerText;
-
-                    if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-
-    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDia7LyFPNrZg_Vn3zdkWv2sZ_Hx62Owa4",
+          authDomain: "vocabularioweb.firebaseapp.com",
+          projectId: "vocabularioweb",
+          storageBucket: "vocabularioweb.appspot.com",
+          messagingSenderId: "644714480844",
+          appId: "1:644714480844:web:7bce6b1dd61836f2b9ae69",
+          measurementId: "G-GQ4NFWS9K1"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 
 </html>
