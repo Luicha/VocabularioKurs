@@ -204,4 +204,9 @@ tr:hover td {
     width: 100%;
     margin-top: 20px;
   }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+th:hover .tooltiptext {
+  visibility: hidden;
+}
 }
