@@ -1,7 +1,9 @@
+
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 50px 50px;
+  margin: 40px;
   background: #e5e5e5;
+  
 }
 
 .caja-principal {
@@ -57,14 +59,18 @@ body {
   position: relative;
   width: 100%;
   overflow: auto;
-  max-height: 800px;
+  max-height: 750px;
 }
 
 table {
   margin: 0 0 0 0;
   width: 100%;
   border-radius: 5px;
-}
+  }
+
+  .tabla-declinacion {
+    margin-bottom: 20px;
+  }
 
 th {
   border: 1px solid black;
@@ -72,40 +78,12 @@ th {
   background: #006DDA;
   color: white;
   font-weight: bold;
+  border-top: #006DDA;
 }
 
 th:nth-child(-n+2):hover {
   color: #F3D34A;
   cursor: pointer; 
-}
-
-/* Tooltip text */
-.tooltiptext {
-  visibility: hidden;
-  width: auto;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 15px;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-}
-
-th .tooltiptext::after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  right: 100%; /* To the left of the tooltip */
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent black transparent transparent;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-th:hover .tooltiptext {
-  visibility: visible;
 }
 
 td {
@@ -130,16 +108,35 @@ tr:hover td {
 .izquierda {
   width: 49%;
   float: left;
+  margin-bottom: 20px;
 }
 
 .derecha {
   width: 49%;
   float: right;
+  margin-bottom: 20px;
 }
 
 .spufi {
+  height: 460px;
   margin-bottom: 20px;
 }
+
+.c-caso {
+  width: 10%;
+}
+
+.c-singular {
+  width: 45%;
+}
+
+.c-plural {
+  width: 45%;
+}
+
+
+
+
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
@@ -204,9 +201,4 @@ tr:hover td {
     width: 100%;
     margin-top: 20px;
   }
-
-  /* Show the tooltip text when you mouse over the tooltip container */
-th:hover .tooltiptext {
-  visibility: hidden;
-}
 }

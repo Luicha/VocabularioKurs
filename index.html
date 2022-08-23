@@ -22,12 +22,12 @@
             <div class="input">
                 <input type="text" id="editText" onkeyup="buscar()" placeholder="Buscar palabra...">
             </div>
-            <div class="div-cuadro">
+            <div class="div-cuadro" id="wrapper">
                 <table class="tabla-palabras" id="cuadro">
                     <thead>
                         <tr class="tehead">
-                            <th onclick="sortTable(0)">Ucraniano ⇅<span class="tooltiptext">Ordenar</span></th>
-                            <th onclick="sortTable(1)">Español ⇅<span class="tooltiptext">Ordenar</span></th>
+                            <th onclick="sortTable(0)">Ucraniano ⇅</th>
+                            <th onclick="sortTable(1)">Español</th>
                             <th class="col-genero">Género</th>
                             <th>Plural</th>
                         </tr>
@@ -39,12 +39,60 @@
         </section>
 
         <section class="derecha">
+            <h1 class="titulo">Declinaciones 🤯</h1>
+            <div>
+                <table class="tabla-declinacion" id="declinacion">
+                    <thead>
+                        <tr class="tehead">
+                            <th class="c-caso">Caso</th>
+                            <th class="c-singular">Singular</th>
+                            <th class="c-plural">Plural</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Nominativo</th>
+                            <td id="nom-sing">баба</td>
+                            <td id="nom-plur">баби</td>
+                        </tr>
+                        <tr>
+                            <th>Genitivo</th>
+                            <td id="gen-sing">баби</td>
+                            <td id="gen-plur">баб, бабів</td>
+                        </tr>
+                        <tr>
+                            <th>Dativo</th>
+                            <td id="dat-sing">бабі</td>
+                            <td id="dat-plur">бабам</td>
+                        </tr>
+                        <tr>
+                            <th>Acusativo</th>
+                            <td id="acu-sing">бабу</td>
+                            <td id="acu-plur">баб, бабів</td>
+                        </tr>
+                        <tr>
+                            <th>Instrumental</th>
+                            <td id="instr-sing">бабою</td>
+                            <td id="instr-plur">бабами</td>
+                        </tr>
+                        <tr>
+                            <th>Locativo</th>
+                            <td id="loc-sing">на/у бабі</td>
+                            <td id="loc-plur">на/у бабах</td>
+                        </tr>
+                        <tr>
+                            <th>Vocativo</th>
+                            <td id="voc-sing">бабо</td>
+                            <td id="voc-plur">баби</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <h1 class="titulo">Musiquita 🪗</h1>
             <iframe class="spufi" style="border-radius:12px"
                 src="https://open.spotify.com/embed/playlist/0v6qC58nene2hpsO6MQotF?utm_source=generator&theme=0"
                 width="100%" height="380" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            <h1 class="titulo">Algo más 🐮</h1>
         </section>
     </main>
     <script type="text/javascript" src="./js/script.js"></script>
@@ -54,23 +102,23 @@
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-      
+
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         const firebaseConfig = {
-          apiKey: "AIzaSyDia7LyFPNrZg_Vn3zdkWv2sZ_Hx62Owa4",
-          authDomain: "vocabularioweb.firebaseapp.com",
-          projectId: "vocabularioweb",
-          storageBucket: "vocabularioweb.appspot.com",
-          messagingSenderId: "644714480844",
-          appId: "1:644714480844:web:7bce6b1dd61836f2b9ae69",
-          measurementId: "G-GQ4NFWS9K1"
+            apiKey: "AIzaSyDia7LyFPNrZg_Vn3zdkWv2sZ_Hx62Owa4",
+            authDomain: "vocabularioweb.firebaseapp.com",
+            projectId: "vocabularioweb",
+            storageBucket: "vocabularioweb.appspot.com",
+            messagingSenderId: "644714480844",
+            appId: "1:644714480844:web:7bce6b1dd61836f2b9ae69",
+            measurementId: "G-GQ4NFWS9K1"
         };
-      
+
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
-      </script>
+    </script>
 </body>
 
 </html>
