@@ -81,10 +81,11 @@ th {
   border-top: #006DDA;
 }
 
-th:nth-child(-n+2):hover {
+.izquierda th:nth-child(-n+2):hover {
   color: #F3D34A;
   cursor: pointer; 
 }
+
 
 td {
   border: 1px solid black;
