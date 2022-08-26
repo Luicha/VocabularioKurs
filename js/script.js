@@ -16,7 +16,7 @@ var listaPalabras = [
   ["Вірш", "Verso", "Masculino", "Вірші"],
   ["Вода", "Agua", "Femenino", "Вода"],
   ["Водій", "Chofer", "Masculino", "Водії"],
-  ["Волосся", "Cabello", "Pl. - Neut.", "Волосся"],
+  ["Волосся", "Cabello", "Pl. - Neut.", "-"],
   ["Вулиця", "Calle", "Femenino", "Вулиці"],
   ["Газета", "Diario", "Femenino", "Газети"],
   ["Галуззя", "Industria", "Pl. - Neut.", "Галуззя"],
@@ -63,12 +63,13 @@ var listaPalabras = [
   ["Мама", "Mamá", "Femenino", "Матері"],
   ["Масло", "Manteca", "Neutro", "Масло"],
   ["Місто", "Ciudad", "Neutro", "Міста"],
-  ["Молоко", "Leche", "Neutro", "Молоко"],
+  ["Молоко", "Leche", "Neutro", "-"],
   ["Музей", "Museo", "Masculino", "Музеї"],
-  ["М'ясо", "Carne", "Neutro", "М'яса"],
+  ["М'ясо", "Carne", "Neutro", "-"],
   ["Ніж", "Cuchillo", "Masculino", "Ножі"],
   ["Обід", "Almuerzo", "Masculino", "Обіди"],
   ["Онук", "Nieto", "Masculino", "Онуки"],
+  ["Онука", "Nieta", "Femenino", "Онуки"],
   ["Оповідання", "Relato", "Pl. - Neut.", "Оповідання"],
   ["Пальто", "Abrigo", "Neutro", "Пальта"],
   ["Пам'ятник", "Monumento", "Masculino", "Пам'ятники"],
@@ -548,17 +549,17 @@ case "Волосся":
 document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
 document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
 document.getElementById("gen-sing").innerHTML = "волосся";
-document.getElementById("gen-plur").innerHTML = "";
+document.getElementById("gen-plur").innerHTML = "-";
 document.getElementById("dat-sing").innerHTML = "волоссю";
-document.getElementById("dat-plur").innerHTML = "";
+document.getElementById("dat-plur").innerHTML = "-";
 document.getElementById("acu-sing").innerHTML = "волосся";
-document.getElementById("acu-plur").innerHTML = "";
+document.getElementById("acu-plur").innerHTML = "-";
 document.getElementById("instr-sing").innerHTML = "волоссям";
-document.getElementById("instr-plur").innerHTML = "";
+document.getElementById("instr-plur").innerHTML = "-";
 document.getElementById("loc-sing").innerHTML = "на/у волоссі";
-document.getElementById("loc-plur").innerHTML = "";
+document.getElementById("loc-plur").innerHTML = "-";
 document.getElementById("voc-sing").innerHTML = "волосся";
-document.getElementById("voc-plur").innerHTML = "";
+document.getElementById("voc-plur").innerHTML = "-";
 break;
 
 case "Вулиця":
@@ -1275,6 +1276,1042 @@ document.getElementById("voc-sing").innerHTML = "магазине";
 document.getElementById("voc-plur").innerHTML = "магазини";
 break;
 
+case "Мак":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "маку";
+document.getElementById("gen-plur").innerHTML = "маків";
+document.getElementById("dat-sing").innerHTML = "макові, маку";
+document.getElementById("dat-plur").innerHTML = "макам";
+document.getElementById("acu-sing").innerHTML = "мак";
+document.getElementById("acu-plur").innerHTML = "маки";
+document.getElementById("instr-sing").innerHTML = "маком";
+document.getElementById("instr-plur").innerHTML = "маками";
+document.getElementById("loc-sing").innerHTML = "на/у маці";
+document.getElementById("loc-plur").innerHTML = "на/у маках";
+document.getElementById("voc-sing").innerHTML = "маку";
+document.getElementById("voc-plur").innerHTML = "маки";
+break;
+  
+case "Мама":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "мами";
+document.getElementById("gen-plur").innerHTML = "мам, мамів";
+document.getElementById("dat-sing").innerHTML = "мамі";
+document.getElementById("dat-plur").innerHTML = "мамам";
+document.getElementById("acu-sing").innerHTML = "маму";
+document.getElementById("acu-plur").innerHTML = "мам, мамів";
+document.getElementById("instr-sing").innerHTML = "мамою";
+document.getElementById("instr-plur").innerHTML = "мамами";
+document.getElementById("loc-sing").innerHTML = "на/у мамі";
+document.getElementById("loc-plur").innerHTML = "на/у мамах";
+document.getElementById("voc-sing").innerHTML = "мамо";
+document.getElementById("voc-plur").innerHTML = "мами";
+break;
+
+case "Масло":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "масла";
+document.getElementById("gen-plur").innerHTML = "масл";
+document.getElementById("dat-sing").innerHTML = "маслу";
+document.getElementById("dat-plur").innerHTML = "маслам";
+document.getElementById("acu-sing").innerHTML = "масло";
+document.getElementById("acu-plur").innerHTML = "масла";
+document.getElementById("instr-sing").innerHTML = "маслом";
+document.getElementById("instr-plur").innerHTML = "маслами";
+document.getElementById("loc-sing").innerHTML = "на/у маслі";
+document.getElementById("loc-plur").innerHTML = "на/у маслах";
+document.getElementById("voc-sing").innerHTML = "масло";
+document.getElementById("voc-plur").innerHTML = "масла";
+break;
+
+case "Місто":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "міста";
+document.getElementById("gen-plur").innerHTML = "міст";
+document.getElementById("dat-sing").innerHTML = "місту";
+document.getElementById("dat-plur").innerHTML = "містам";
+document.getElementById("acu-sing").innerHTML = "місто";
+document.getElementById("acu-plur").innerHTML = "міста";
+document.getElementById("instr-sing").innerHTML = "містом";
+document.getElementById("instr-plur").innerHTML = "містами";
+document.getElementById("loc-sing").innerHTML = "на/у місті";
+document.getElementById("loc-plur").innerHTML = "на/у містах";
+document.getElementById("voc-sing").innerHTML = "місто";
+document.getElementById("voc-plur").innerHTML = "міста";
+break;
+
+case "Молоко":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "молока";
+document.getElementById("gen-plur").innerHTML = "-";
+document.getElementById("dat-sing").innerHTML = "молокові, молоку";
+document.getElementById("dat-plur").innerHTML = "-";
+document.getElementById("acu-sing").innerHTML = "молоко";
+document.getElementById("acu-plur").innerHTML = "-";
+document.getElementById("instr-sing").innerHTML = "молоком";
+document.getElementById("instr-plur").innerHTML = "-";
+document.getElementById("loc-sing").innerHTML = "на/у молоку";
+document.getElementById("loc-plur").innerHTML = "-";
+document.getElementById("voc-sing").innerHTML = "молоко";
+document.getElementById("voc-plur").innerHTML = "-";
+break;
+
+case "Музей":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "музею";
+document.getElementById("gen-plur").innerHTML = "музеїв";
+document.getElementById("dat-sing").innerHTML = "музеєві, музею";
+document.getElementById("dat-plur").innerHTML = "музеям";
+document.getElementById("acu-sing").innerHTML = "музей";
+document.getElementById("acu-plur").innerHTML = "музеї";
+document.getElementById("instr-sing").innerHTML = "музеєм";
+document.getElementById("instr-plur").innerHTML = "музеями";
+document.getElementById("loc-sing").innerHTML = "на/у музеї";
+document.getElementById("loc-plur").innerHTML = "на/у музеях";
+document.getElementById("voc-sing").innerHTML = "музею";
+document.getElementById("voc-plur").innerHTML = "музеї";
+break;
+
+case "М'ясо":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "м'яса";
+document.getElementById("gen-plur").innerHTML = "-";
+document.getElementById("dat-sing").innerHTML = "м'ясу";
+document.getElementById("dat-plur").innerHTML = "-";
+document.getElementById("acu-sing").innerHTML = "м'ясо";
+document.getElementById("acu-plur").innerHTML = "-";
+document.getElementById("instr-sing").innerHTML = "м'ясом";
+document.getElementById("instr-plur").innerHTML = "-";
+document.getElementById("loc-sing").innerHTML = "на/у м'ясі";
+document.getElementById("loc-plur").innerHTML = "-";
+document.getElementById("voc-sing").innerHTML = "м'ясо";
+document.getElementById("voc-plur").innerHTML = "-";
+break;
+
+case "Ніж":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "ножа";
+document.getElementById("gen-plur").innerHTML = "ножів";
+document.getElementById("dat-sing").innerHTML = "ножеві, ножу";
+document.getElementById("dat-plur").innerHTML = "ножам";
+document.getElementById("acu-sing").innerHTML = "ніж, ножа";
+document.getElementById("acu-plur").innerHTML = "ножі";
+document.getElementById("instr-sing").innerHTML = "ножем";
+document.getElementById("instr-plur").innerHTML = "ножами";
+document.getElementById("loc-sing").innerHTML = "на/у ножі, ножу, ножеві";
+document.getElementById("loc-plur").innerHTML = "на/у ножах";
+document.getElementById("voc-sing").innerHTML = "ножу";
+document.getElementById("voc-plur").innerHTML = "ножі";
+break;
+
+case "Обід":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "обіду";
+document.getElementById("gen-plur").innerHTML = "обідів";
+document.getElementById("dat-sing").innerHTML = "обідові, обіду";
+document.getElementById("dat-plur").innerHTML = "обідам";
+document.getElementById("acu-sing").innerHTML = "обід";
+document.getElementById("acu-plur").innerHTML = "обіди";
+document.getElementById("instr-sing").innerHTML = "обідом";
+document.getElementById("instr-plur").innerHTML = "обідами";
+document.getElementById("loc-sing").innerHTML = "на/у обіді";
+document.getElementById("loc-plur").innerHTML = "на/у обідах";
+document.getElementById("voc-sing").innerHTML = "обіде";
+document.getElementById("voc-plur").innerHTML = "обіди";
+break;
+
+case "Онук":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "онука";
+document.getElementById("gen-plur").innerHTML = "онуків";
+document.getElementById("dat-sing").innerHTML = "онукові, онуку";
+document.getElementById("dat-plur").innerHTML = "онукам";
+document.getElementById("acu-sing").innerHTML = "онука";
+document.getElementById("acu-plur").innerHTML = "онуків";
+document.getElementById("instr-sing").innerHTML = "онуком";
+document.getElementById("instr-plur").innerHTML = "онуками";
+document.getElementById("loc-sing").innerHTML = "на/у онуку, онукові";
+document.getElementById("loc-plur").innerHTML = "на/у онуках";
+document.getElementById("voc-sing").innerHTML = "онуче";
+document.getElementById("voc-plur").innerHTML = "онуки";
+break;
+
+case "Онука":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "онуки";
+document.getElementById("gen-plur").innerHTML = "онук";
+document.getElementById("dat-sing").innerHTML = "онуці";
+document.getElementById("dat-plur").innerHTML = "онукам";
+document.getElementById("acu-sing").innerHTML = "онуку";
+document.getElementById("acu-plur").innerHTML = "онук";
+document.getElementById("instr-sing").innerHTML = "онукою";
+document.getElementById("instr-plur").innerHTML = "онуками";
+document.getElementById("loc-sing").innerHTML = "на/у онуці";
+document.getElementById("loc-plur").innerHTML = "на/у онуках";
+document.getElementById("voc-sing").innerHTML = "онуко";
+document.getElementById("voc-plur").innerHTML = "онуки";
+break;
+
+case "Оповідання":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "оповідання";
+document.getElementById("gen-plur").innerHTML = "оповідань";
+document.getElementById("dat-sing").innerHTML = "оповіданню";
+document.getElementById("dat-plur").innerHTML = "оповіданням";
+document.getElementById("acu-sing").innerHTML = "оповідання";
+document.getElementById("acu-plur").innerHTML = "оповідання";
+document.getElementById("instr-sing").innerHTML = "оповіданням";
+document.getElementById("instr-plur").innerHTML = "оповіданнями";
+document.getElementById("loc-sing").innerHTML = "на/у оповіданні";
+document.getElementById("loc-plur").innerHTML = "на/у оповіданнях";
+document.getElementById("voc-sing").innerHTML = "оповідання";
+document.getElementById("voc-plur").innerHTML = "оповідання";
+break;
+
+case "Пальто":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "пальта";
+document.getElementById("gen-plur").innerHTML = "пальт";
+document.getElementById("dat-sing").innerHTML = "пальту";
+document.getElementById("dat-plur").innerHTML = "пальтам";
+document.getElementById("acu-sing").innerHTML = "пальто";
+document.getElementById("acu-plur").innerHTML = "пальта";
+document.getElementById("instr-sing").innerHTML = "пальтом";
+document.getElementById("instr-plur").innerHTML = "пальтами";
+document.getElementById("loc-sing").innerHTML = "на/у пальті";
+document.getElementById("loc-plur").innerHTML = "на/у пальтах";
+document.getElementById("voc-sing").innerHTML = "пальто";
+document.getElementById("voc-plur").innerHTML = "пальта";
+break;
+
+case "Пам'ятник":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "пам'ятника";
+document.getElementById("gen-plur").innerHTML = "пам'ятників";
+document.getElementById("dat-sing").innerHTML = "пам'ятникові, пам'ятнику";
+document.getElementById("dat-plur").innerHTML = "пам'ятникам";
+document.getElementById("acu-sing").innerHTML = "пам'ятник";
+document.getElementById("acu-plur").innerHTML = "пам'ятники";
+document.getElementById("instr-sing").innerHTML = "пам'ятником";
+document.getElementById("instr-plur").innerHTML = "пам'ятниками";
+document.getElementById("loc-sing").innerHTML = "на/у пам'ятнику";
+document.getElementById("loc-plur").innerHTML = "на/у пам'ятниках";
+document.getElementById("voc-sing").innerHTML = "пам'ятнику";
+document.getElementById("voc-plur").innerHTML = "пам'ятники";
+break;
+
+case "Папка":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "папки";
+document.getElementById("gen-plur").innerHTML = "папок";
+document.getElementById("dat-sing").innerHTML = "папці";
+document.getElementById("dat-plur").innerHTML = "папкам";
+document.getElementById("acu-sing").innerHTML = "папку";
+document.getElementById("acu-plur").innerHTML = "папки";
+document.getElementById("instr-sing").innerHTML = "папкою";
+document.getElementById("instr-plur").innerHTML = "папками";
+document.getElementById("loc-sing").innerHTML = "на/у папці";
+document.getElementById("loc-plur").innerHTML = "на/у папках";
+document.getElementById("voc-sing").innerHTML = "папко";
+document.getElementById("voc-plur").innerHTML = "папки";
+break;
+
+case "Парк":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "парку";
+document.getElementById("gen-plur").innerHTML = "парків";
+document.getElementById("dat-sing").innerHTML = "паркові, парку";
+document.getElementById("dat-plur").innerHTML = "паркам";
+document.getElementById("acu-sing").innerHTML = "парк";
+document.getElementById("acu-plur").innerHTML = "парки";
+document.getElementById("instr-sing").innerHTML = "парком";
+document.getElementById("instr-plur").innerHTML = "парками";
+document.getElementById("loc-sing").innerHTML = "на/у парку";
+document.getElementById("loc-plur").innerHTML = "на/у парках";
+document.getElementById("voc-sing").innerHTML = "парку";
+document.getElementById("voc-plur").innerHTML = "парки";
+break;
+
+case "Піджак":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "піджака";
+document.getElementById("gen-plur").innerHTML = "піджаків";
+document.getElementById("dat-sing").innerHTML = "піджакові, піджаку";
+document.getElementById("dat-plur").innerHTML = "піджакам";
+document.getElementById("acu-sing").innerHTML = "піджак";
+document.getElementById("acu-plur").innerHTML = "піджаки";
+document.getElementById("instr-sing").innerHTML = "піджаком";
+document.getElementById("instr-plur").innerHTML = "піджаками";
+document.getElementById("loc-sing").innerHTML = "на/у піджаку";
+document.getElementById("loc-plur").innerHTML = "на/у піджаках";
+document.getElementById("voc-sing").innerHTML = "піджаку";
+document.getElementById("voc-plur").innerHTML = "піджаки";
+break;
+
+case "Пілот":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "пілота";
+document.getElementById("gen-plur").innerHTML = "пілотів";
+document.getElementById("dat-sing").innerHTML = "пілотові, пілоту";
+document.getElementById("dat-plur").innerHTML = "пілотам";
+document.getElementById("acu-sing").innerHTML = "пілота";
+document.getElementById("acu-plur").innerHTML = "пілотів";
+document.getElementById("instr-sing").innerHTML = "пілотом";
+document.getElementById("instr-plur").innerHTML = "пілотами";
+document.getElementById("loc-sing").innerHTML = "на/у пілоті, пілотові";
+document.getElementById("loc-plur").innerHTML = "на/у пілотах";
+document.getElementById("voc-sing").innerHTML = "пілоте";
+document.getElementById("voc-plur").innerHTML = "пілоти";
+break;
+
+case "Пісня":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "пісні";
+document.getElementById("gen-plur").innerHTML = "пісень";
+document.getElementById("dat-sing").innerHTML = "пісні";
+document.getElementById("dat-plur").innerHTML = "пісням";
+document.getElementById("acu-sing").innerHTML = "пісню";
+document.getElementById("acu-plur").innerHTML = "пісні";
+document.getElementById("instr-sing").innerHTML = "піснею";
+document.getElementById("instr-plur").innerHTML = "піснями";
+document.getElementById("loc-sing").innerHTML = "на/у пісні";
+document.getElementById("loc-plur").innerHTML = "на/у піснях";
+document.getElementById("voc-sing").innerHTML = "пісне";
+document.getElementById("voc-plur").innerHTML = "пісні";
+break;
+
+case "Подруга":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "подруги";
+document.getElementById("gen-plur").innerHTML = "подруг";
+document.getElementById("dat-sing").innerHTML = "подрузі";
+document.getElementById("dat-plur").innerHTML = "подругам";
+document.getElementById("acu-sing").innerHTML = "подругу";
+document.getElementById("acu-plur").innerHTML = "подруг";
+document.getElementById("instr-sing").innerHTML = "подругою";
+document.getElementById("instr-plur").innerHTML = "подругами";
+document.getElementById("loc-sing").innerHTML = "на/у подрузі";
+document.getElementById("loc-plur").innerHTML = "на/у подругах";
+document.getElementById("voc-sing").innerHTML = "подруго";
+document.getElementById("voc-plur").innerHTML = "подруги";
+break;
+
+case "Поет":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "поета";
+document.getElementById("gen-plur").innerHTML = "поетів";
+document.getElementById("dat-sing").innerHTML = "поетові, поету";
+document.getElementById("dat-plur").innerHTML = "поетам";
+document.getElementById("acu-sing").innerHTML = "поета";
+document.getElementById("acu-plur").innerHTML = "поетів";
+document.getElementById("instr-sing").innerHTML = "поетом";
+document.getElementById("instr-plur").innerHTML = "поетами";
+document.getElementById("loc-sing").innerHTML = "на/у поеті, поетові";
+document.getElementById("loc-plur").innerHTML = "на/у поетах";
+document.getElementById("voc-sing").innerHTML = "поете";
+document.getElementById("voc-plur").innerHTML = "поети";
+break;
+
+case "Прапор":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "прапора";
+document.getElementById("gen-plur").innerHTML = "прапорів";
+document.getElementById("dat-sing").innerHTML = "прапорові, прапору";
+document.getElementById("dat-plur").innerHTML = "прапорам";
+document.getElementById("acu-sing").innerHTML = "прапор";
+document.getElementById("acu-plur").innerHTML = "прапори";
+document.getElementById("instr-sing").innerHTML = "прапором";
+document.getElementById("instr-plur").innerHTML = "прапорами";
+document.getElementById("loc-sing").innerHTML = "на/у прапорі";
+document.getElementById("loc-plur").innerHTML = "на/у прапорах";
+document.getElementById("voc-sing").innerHTML = "прапоре";
+document.getElementById("voc-plur").innerHTML = "прапори";
+break;
+
+case "Радіо":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "радіо";
+document.getElementById("gen-plur").innerHTML = "радіо";
+document.getElementById("dat-sing").innerHTML = "радіо";
+document.getElementById("dat-plur").innerHTML = "радіо";
+document.getElementById("acu-sing").innerHTML = "радіо";
+document.getElementById("acu-plur").innerHTML = "радіо";
+document.getElementById("instr-sing").innerHTML = "радіо";
+document.getElementById("instr-plur").innerHTML = "радіо";
+document.getElementById("loc-sing").innerHTML = "на/у радіо";
+document.getElementById("loc-plur").innerHTML = "на/у радіо";
+document.getElementById("voc-sing").innerHTML = "радіо";
+document.getElementById("voc-plur").innerHTML = "радіо";
+break;
+
+case "Ресторан":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "ресторану";
+document.getElementById("gen-plur").innerHTML = "ресторанів";
+document.getElementById("dat-sing").innerHTML = "ресторанові, ресторану";
+document.getElementById("dat-plur").innerHTML = "ресторанам";
+document.getElementById("acu-sing").innerHTML = "ресторан";
+document.getElementById("acu-plur").innerHTML = "ресторани";
+document.getElementById("instr-sing").innerHTML = "рестораном";
+document.getElementById("instr-plur").innerHTML = "ресторанами";
+document.getElementById("loc-sing").innerHTML = "на/у ресторані";
+document.getElementById("loc-plur").innerHTML = "на/у ресторанах";
+document.getElementById("voc-sing").innerHTML = "ресторане";
+document.getElementById("voc-plur").innerHTML = "ресторани";
+break;
+
+case "Риба":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "риби";
+document.getElementById("gen-plur").innerHTML = "риб";
+document.getElementById("dat-sing").innerHTML = "рибі";
+document.getElementById("dat-plur").innerHTML = "рибам";
+document.getElementById("acu-sing").innerHTML = "рибу";
+document.getElementById("acu-plur").innerHTML = "риб";
+document.getElementById("instr-sing").innerHTML = "рибою";
+document.getElementById("instr-plur").innerHTML = "рибами";
+document.getElementById("loc-sing").innerHTML = "на/у рибі";
+document.getElementById("loc-plur").innerHTML = "на/у рибах";
+document.getElementById("voc-sing").innerHTML = "рибо";
+document.getElementById("voc-plur").innerHTML = "риби";
+break;
+
+case "Річка":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "річки";
+document.getElementById("gen-plur").innerHTML = "річок";
+document.getElementById("dat-sing").innerHTML = "річці";
+document.getElementById("dat-plur").innerHTML = "річкам";
+document.getElementById("acu-sing").innerHTML = "річку";
+document.getElementById("acu-plur").innerHTML = "річки";
+document.getElementById("instr-sing").innerHTML = "річкою";
+document.getElementById("instr-plur").innerHTML = "річками";
+document.getElementById("loc-sing").innerHTML = "на/у річці";
+document.getElementById("loc-plur").innerHTML = "на/у річках";
+document.getElementById("voc-sing").innerHTML = "річко";
+document.getElementById("voc-plur").innerHTML = "річки";
+break;
+
+case "Робітник":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "робітника";
+document.getElementById("gen-plur").innerHTML = "робітників";
+document.getElementById("dat-sing").innerHTML = "робітникові, робітнику";
+document.getElementById("dat-plur").innerHTML = "робітникам";
+document.getElementById("acu-sing").innerHTML = "робітника";
+document.getElementById("acu-plur").innerHTML = "робітників";
+document.getElementById("instr-sing").innerHTML = "робітником";
+document.getElementById("instr-plur").innerHTML = "робітниками";
+document.getElementById("loc-sing").innerHTML = "на/у робітнику, робітникові";
+document.getElementById("loc-plur").innerHTML = "на/у робітниках";
+document.getElementById("voc-sing").innerHTML = "робітнику, робітниче";
+document.getElementById("voc-plur").innerHTML = "робітники";
+break;
+
+case "Ручка":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "ручки";
+document.getElementById("gen-plur").innerHTML = "ручок";
+document.getElementById("dat-sing").innerHTML = "ручці";
+document.getElementById("dat-plur").innerHTML = "ручкам";
+document.getElementById("acu-sing").innerHTML = "ручку";
+document.getElementById("acu-plur").innerHTML = "ручки";
+document.getElementById("instr-sing").innerHTML = "ручкою";
+document.getElementById("instr-plur").innerHTML = "ручками";
+document.getElementById("loc-sing").innerHTML = "на/у ручці";
+document.getElementById("loc-plur").innerHTML = "на/у ручках";
+document.getElementById("voc-sing").innerHTML = "ручко";
+document.getElementById("voc-plur").innerHTML = "ручки";
+break;
+
+case "Сад":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "саду";
+document.getElementById("gen-plur").innerHTML = "садів";
+document.getElementById("dat-sing").innerHTML = "садові, саду";
+document.getElementById("dat-plur").innerHTML = "садам";
+document.getElementById("acu-sing").innerHTML = "сад";
+document.getElementById("acu-plur").innerHTML = "сади";
+document.getElementById("instr-sing").innerHTML = "садом";
+document.getElementById("instr-plur").innerHTML = "садами";
+document.getElementById("loc-sing").innerHTML = "на/у саду";
+document.getElementById("loc-plur").innerHTML = "на/у садах";
+document.getElementById("voc-sing").innerHTML = "саде";
+document.getElementById("voc-plur").innerHTML = "сади";
+break;
+
+case "Сестра":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "сестри";
+document.getElementById("gen-plur").innerHTML = "сестер";
+document.getElementById("dat-sing").innerHTML = "сестрі";
+document.getElementById("dat-plur").innerHTML = "сестрам";
+document.getElementById("acu-sing").innerHTML = "сестру";
+document.getElementById("acu-plur").innerHTML = "сестер";
+document.getElementById("instr-sing").innerHTML = "сестрою";
+document.getElementById("instr-plur").innerHTML = "сестрами";
+document.getElementById("loc-sing").innerHTML = "на/у сестрі";
+document.getElementById("loc-plur").innerHTML = "на/у сестрах";
+document.getElementById("voc-sing").innerHTML = "сестро";
+document.getElementById("voc-plur").innerHTML = "сестри";
+break;
+
+case "Син":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "сина";
+document.getElementById("gen-plur").innerHTML = "синів";
+document.getElementById("dat-sing").innerHTML = "синові, сину";
+document.getElementById("dat-plur").innerHTML = "синам";
+document.getElementById("acu-sing").innerHTML = "сина";
+document.getElementById("acu-plur").innerHTML = "синів";
+document.getElementById("instr-sing").innerHTML = "сином";
+document.getElementById("instr-plur").innerHTML = "синами";
+document.getElementById("loc-sing").innerHTML = "на/у сині, синові";
+document.getElementById("loc-plur").innerHTML = "на/у синах";
+document.getElementById("voc-sing").innerHTML = "сину";
+document.getElementById("voc-plur").innerHTML = "сини";
+break;
+
+case "Сир":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "сиру";
+document.getElementById("gen-plur").innerHTML = "сирів";
+document.getElementById("dat-sing").innerHTML = "сирові, сиру";
+document.getElementById("dat-plur").innerHTML = "сирам";
+document.getElementById("acu-sing").innerHTML = "сир";
+document.getElementById("acu-plur").innerHTML = "сири";
+document.getElementById("instr-sing").innerHTML = "сиром";
+document.getElementById("instr-plur").innerHTML = "сирами";
+document.getElementById("loc-sing").innerHTML = "на/у сирі";
+document.getElementById("loc-plur").innerHTML = "на/у сирах";
+document.getElementById("voc-sing").innerHTML = "сире";
+document.getElementById("voc-plur").innerHTML = "сири";
+break;
+
+case "Сім'я":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "сім'ї";
+document.getElementById("gen-plur").innerHTML = "сімей";
+document.getElementById("dat-sing").innerHTML = "сім'ї";
+document.getElementById("dat-plur").innerHTML = "сім'ям";
+document.getElementById("acu-sing").innerHTML = "сім'ю";
+document.getElementById("acu-plur").innerHTML = "сім'ї";
+document.getElementById("instr-sing").innerHTML = "сім'єю";
+document.getElementById("instr-plur").innerHTML = "сім'ями";
+document.getElementById("loc-sing").innerHTML = "на/у сім'ї";
+document.getElementById("loc-plur").innerHTML = "на/у сім'ях";
+document.getElementById("voc-sing").innerHTML = "сім'є";
+document.getElementById("voc-plur").innerHTML = "сім'ї";
+break;
+
+case "Сніданок":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "сніданку";
+document.getElementById("gen-plur").innerHTML = "сніданків";
+document.getElementById("dat-sing").innerHTML = "сніданкові, сніданку";
+document.getElementById("dat-plur").innerHTML = "сніданкам";
+document.getElementById("acu-sing").innerHTML = "сніданок";
+document.getElementById("acu-plur").innerHTML = "сніданки";
+document.getElementById("instr-sing").innerHTML = "сніданком";
+document.getElementById("instr-plur").innerHTML = "сніданками";
+document.getElementById("loc-sing").innerHTML = "на/у сніданку";
+document.getElementById("loc-plur").innerHTML = "на/у сніданках";
+document.getElementById("voc-sing").innerHTML = "сніданку";
+document.getElementById("voc-plur").innerHTML = "сніданки";
+break;
+
+case "Стіл":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "стола, столу";
+document.getElementById("gen-plur").innerHTML = "столів";
+document.getElementById("dat-sing").innerHTML = "столові, столу";
+document.getElementById("dat-plur").innerHTML = "столам";
+document.getElementById("acu-sing").innerHTML = "стіл";
+document.getElementById("acu-plur").innerHTML = "столи";
+document.getElementById("instr-sing").innerHTML = "столом";
+document.getElementById("instr-plur").innerHTML = "столами";
+document.getElementById("loc-sing").innerHTML = "на/у столі, столу";
+document.getElementById("loc-plur").innerHTML = "на/у столах";
+document.getElementById("voc-sing").innerHTML = "столе";
+document.getElementById("voc-plur").innerHTML = "столи";
+break;
+
+case "Стілець":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "стільця";
+document.getElementById("gen-plur").innerHTML = "стільців";
+document.getElementById("dat-sing").innerHTML = "стільцеві, стільцю";
+document.getElementById("dat-plur").innerHTML = "стільцям";
+document.getElementById("acu-sing").innerHTML = "стілець";
+document.getElementById("acu-plur").innerHTML = "стільці";
+document.getElementById("instr-sing").innerHTML = "стільцем";
+document.getElementById("instr-plur").innerHTML = "стільцями";
+document.getElementById("loc-sing").innerHTML = "на/у стільці";
+document.getElementById("loc-plur").innerHTML = "на/у стільцях";
+document.getElementById("voc-sing").innerHTML = "стільцю";
+document.getElementById("voc-plur").innerHTML = "стільці";
+break;
+
+case "Сторіччя":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "сторіччя";
+document.getElementById("gen-plur").innerHTML = "сторіч";
+document.getElementById("dat-sing").innerHTML = "сторіччю";
+document.getElementById("dat-plur").innerHTML = "сторіччям";
+document.getElementById("acu-sing").innerHTML = "сторіччя";
+document.getElementById("acu-plur").innerHTML = "сторіччя";
+document.getElementById("instr-sing").innerHTML = "сторіччям";
+document.getElementById("instr-plur").innerHTML = "сторіччями";
+document.getElementById("loc-sing").innerHTML = "на/у сторіччі";
+document.getElementById("loc-plur").innerHTML = "на/у сторіччях";
+document.getElementById("voc-sing").innerHTML = "сторіччя";
+document.getElementById("voc-plur").innerHTML = "сторіччя";
+break;
+
+case "Студент":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "студента";
+document.getElementById("gen-plur").innerHTML = "студентів";
+document.getElementById("dat-sing").innerHTML = "студентові, студенту";
+document.getElementById("dat-plur").innerHTML = "студентам";
+document.getElementById("acu-sing").innerHTML = "студента";
+document.getElementById("acu-plur").innerHTML = "студентів";
+document.getElementById("instr-sing").innerHTML = "студентом";
+document.getElementById("instr-plur").innerHTML = "студентами";
+document.getElementById("loc-sing").innerHTML = "на/у студенті, студентові";
+document.getElementById("loc-plur").innerHTML = "на/у студентах";
+document.getElementById("voc-sing").innerHTML = "студенте";
+document.getElementById("voc-plur").innerHTML = "студенти";
+break;
+
+case "Суддя":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "судді";
+document.getElementById("gen-plur").innerHTML = "суддів";
+document.getElementById("dat-sing").innerHTML = "судді";
+document.getElementById("dat-plur").innerHTML = "суддям";
+document.getElementById("acu-sing").innerHTML = "суддю";
+document.getElementById("acu-plur").innerHTML = "суддів";
+document.getElementById("instr-sing").innerHTML = "суддею";
+document.getElementById("instr-plur").innerHTML = "суддями";
+document.getElementById("loc-sing").innerHTML = "на/у судді";
+document.getElementById("loc-plur").innerHTML = "на/у суддях";
+document.getElementById("voc-sing").innerHTML = "судде";
+document.getElementById("voc-plur").innerHTML = "судді";
+break;
+
+case "Сукня":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "сукні";
+document.getElementById("gen-plur").innerHTML = "суконь";
+document.getElementById("dat-sing").innerHTML = "сукні";
+document.getElementById("dat-plur").innerHTML = "сукням";
+document.getElementById("acu-sing").innerHTML = "сукню";
+document.getElementById("acu-plur").innerHTML = "сукні";
+document.getElementById("instr-sing").innerHTML = "сукнею";
+document.getElementById("instr-plur").innerHTML = "сукнями";
+document.getElementById("loc-sing").innerHTML = "на/у сукні";
+document.getElementById("loc-plur").innerHTML = "на/у сукнях";
+document.getElementById("voc-sing").innerHTML = "сукне";
+document.getElementById("voc-plur").innerHTML = "сукні";
+break;
+
+case "Тарілка":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "тарілки";
+document.getElementById("gen-plur").innerHTML = "тарілок";
+document.getElementById("dat-sing").innerHTML = "тарілці";
+document.getElementById("dat-plur").innerHTML = "тарілкам";
+document.getElementById("acu-sing").innerHTML = "тарілку";
+document.getElementById("acu-plur").innerHTML = "тарілки";
+document.getElementById("instr-sing").innerHTML = "тарілкою";
+document.getElementById("instr-plur").innerHTML = "тарілками";
+document.getElementById("loc-sing").innerHTML = "на/у тарілці";
+document.getElementById("loc-plur").innerHTML = "на/у тарілках";
+document.getElementById("voc-sing").innerHTML = "тарілко";
+document.getElementById("voc-plur").innerHTML = "тарілки";
+break;
+
+case "Тато":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "тата";
+document.getElementById("gen-plur").innerHTML = "татів";
+document.getElementById("dat-sing").innerHTML = "татові, тату";
+document.getElementById("dat-plur").innerHTML = "татам";
+document.getElementById("acu-sing").innerHTML = "тата";
+document.getElementById("acu-plur").innerHTML = "татів";
+document.getElementById("instr-sing").innerHTML = "татом";
+document.getElementById("instr-plur").innerHTML = "татами";
+document.getElementById("loc-sing").innerHTML = "на/у таті, татові";
+document.getElementById("loc-plur").innerHTML = "на/у татах";
+document.getElementById("voc-sing").innerHTML = "тату";
+document.getElementById("voc-plur").innerHTML = "тати";
+break;
+
+case "Турист":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "туриста";
+document.getElementById("gen-plur").innerHTML = "туристів";
+document.getElementById("dat-sing").innerHTML = "туристові, туристу";
+document.getElementById("dat-plur").innerHTML = "туристам";
+document.getElementById("acu-sing").innerHTML = "туриста";
+document.getElementById("acu-plur").innerHTML = "туристів";
+document.getElementById("instr-sing").innerHTML = "туристом";
+document.getElementById("instr-plur").innerHTML = "туристами";
+document.getElementById("loc-sing").innerHTML = "на/у туристі, туристові";
+document.getElementById("loc-plur").innerHTML = "на/у туристах";
+document.getElementById("voc-sing").innerHTML = "туристе";
+document.getElementById("voc-plur").innerHTML = "туристи";
+break;
+
+case "Тютюн":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "тютюну";
+document.getElementById("gen-plur").innerHTML = "тютюнів";
+document.getElementById("dat-sing").innerHTML = "тютюнові, тютюну";
+document.getElementById("dat-plur").innerHTML = "тютюнам";
+document.getElementById("acu-sing").innerHTML = "тютюн";
+document.getElementById("acu-plur").innerHTML = "тютюни";
+document.getElementById("instr-sing").innerHTML = "тютюном";
+document.getElementById("instr-plur").innerHTML = "тютюнами";
+document.getElementById("loc-sing").innerHTML = "на/у тютюні";
+document.getElementById("loc-plur").innerHTML = "на/у тютюнах";
+document.getElementById("voc-sing").innerHTML = "тютюне";
+document.getElementById("voc-plur").innerHTML = "тютюни";
+break;
+
+case "Узбережжя":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "узбережжя";
+document.getElementById("gen-plur").innerHTML = "узбереж";
+document.getElementById("dat-sing").innerHTML = "узбережжю";
+document.getElementById("dat-plur").innerHTML = "узбережжям";
+document.getElementById("acu-sing").innerHTML = "узбережжя";
+document.getElementById("acu-plur").innerHTML = "узбережжя";
+document.getElementById("instr-sing").innerHTML = "узбережжям";
+document.getElementById("instr-plur").innerHTML = "узбережжями";
+document.getElementById("loc-sing").innerHTML = "на/у узбережжі";
+document.getElementById("loc-plur").innerHTML = "на/у узбережжях";
+document.getElementById("voc-sing").innerHTML = "узбережжя";
+document.getElementById("voc-plur").innerHTML = "узбережжя";
+break;
+
+case "Учень":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "учня";
+document.getElementById("gen-plur").innerHTML = "учнів";
+document.getElementById("dat-sing").innerHTML = "учневі, учню";
+document.getElementById("dat-plur").innerHTML = "учням";
+document.getElementById("acu-sing").innerHTML = "учня";
+document.getElementById("acu-plur").innerHTML = "учнів";
+document.getElementById("instr-sing").innerHTML = "учнем";
+document.getElementById("instr-plur").innerHTML = "учнями";
+document.getElementById("loc-sing").innerHTML = "на/у учні, учневі";
+document.getElementById("loc-plur").innerHTML = "на/у учнях";
+document.getElementById("voc-sing").innerHTML = "учню";
+document.getElementById("voc-plur").innerHTML = "учні";
+break;
+
+case "Учитель":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "учителя";
+document.getElementById("gen-plur").innerHTML = "учителів";
+document.getElementById("dat-sing").innerHTML = "учителеві, учителю";
+document.getElementById("dat-plur").innerHTML = "учителям";
+document.getElementById("acu-sing").innerHTML = "учителя";
+document.getElementById("acu-plur").innerHTML = "учителів";
+document.getElementById("instr-sing").innerHTML = "учителем";
+document.getElementById("instr-plur").innerHTML = "учителями";
+document.getElementById("loc-sing").innerHTML = "на/у учителі";
+document.getElementById("loc-plur").innerHTML = "на/у учителях";
+document.getElementById("voc-sing").innerHTML = "учителю";
+document.getElementById("voc-plur").innerHTML = "учителі";
+break;
+
+case "Учителька":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "учительки";
+document.getElementById("gen-plur").innerHTML = "учительок";
+document.getElementById("dat-sing").innerHTML = "учительці";
+document.getElementById("dat-plur").innerHTML = "учителькам";
+document.getElementById("acu-sing").innerHTML = "учительку";
+document.getElementById("acu-plur").innerHTML = "учительок";
+document.getElementById("instr-sing").innerHTML = "учителькою";
+document.getElementById("instr-plur").innerHTML = "учительками";
+document.getElementById("loc-sing").innerHTML = "на/у учительці";
+document.getElementById("loc-plur").innerHTML = "на/у учительках";
+document.getElementById("voc-sing").innerHTML = "учителько";
+document.getElementById("voc-plur").innerHTML = "учительки";
+break;
+
+case "Фізик":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "фізика";
+document.getElementById("gen-plur").innerHTML = "фізиків";
+document.getElementById("dat-sing").innerHTML = "фізикові, фізику";
+document.getElementById("dat-plur").innerHTML = "фізикам";
+document.getElementById("acu-sing").innerHTML = "фізика";
+document.getElementById("acu-plur").innerHTML = "фізиків";
+document.getElementById("instr-sing").innerHTML = "фізиком";
+document.getElementById("instr-plur").innerHTML = "фізиками";
+document.getElementById("loc-sing").innerHTML = "на/у фізику, фізикові";
+document.getElementById("loc-plur").innerHTML = "на/у фізиках";
+document.getElementById("voc-sing").innerHTML = "фізику";
+document.getElementById("voc-plur").innerHTML = "фізики";
+break;
+
+case "Фонтана":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "фонтани";
+document.getElementById("gen-plur").innerHTML = "фонтан";
+document.getElementById("dat-sing").innerHTML = "фонтані";
+document.getElementById("dat-plur").innerHTML = "фонтанам";
+document.getElementById("acu-sing").innerHTML = "фонтану";
+document.getElementById("acu-plur").innerHTML = "фонтани";
+document.getElementById("instr-sing").innerHTML = "фонтаною";
+document.getElementById("instr-plur").innerHTML = "фонтанами";
+document.getElementById("loc-sing").innerHTML = "на/у фонтані";
+document.getElementById("loc-plur").innerHTML = "на/у фонтанах";
+document.getElementById("voc-sing").innerHTML = "фонтано";
+document.getElementById("voc-plur").innerHTML = "фонтани";
+break;
+
+case "Фото":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "фото";
+document.getElementById("gen-plur").innerHTML = "фото";
+document.getElementById("dat-sing").innerHTML = "фото";
+document.getElementById("dat-plur").innerHTML = "фото";
+document.getElementById("acu-sing").innerHTML = "фото";
+document.getElementById("acu-plur").innerHTML = "фото";
+document.getElementById("instr-sing").innerHTML = "фото";
+document.getElementById("instr-plur").innerHTML = "фото";
+document.getElementById("loc-sing").innerHTML = "на/у фото";
+document.getElementById("loc-plur").innerHTML = "на/у фото";
+document.getElementById("voc-sing").innerHTML = "фото";
+document.getElementById("voc-plur").innerHTML = "фото";
+break;
+
+case "Хлопець":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "хлопця";
+document.getElementById("gen-plur").innerHTML = "хлопців";
+document.getElementById("dat-sing").innerHTML = "хлопцеві, хлопцю";
+document.getElementById("dat-plur").innerHTML = "хлопцям";
+document.getElementById("acu-sing").innerHTML = "хлопця";
+document.getElementById("acu-plur").innerHTML = "хлопців";
+document.getElementById("instr-sing").innerHTML = "хлопцем";
+document.getElementById("instr-plur").innerHTML = "хлопцями";
+document.getElementById("loc-sing").innerHTML = "на/у хлопці, хлопцеві";
+document.getElementById("loc-plur").innerHTML = "на/у хлопцях";
+document.getElementById("voc-sing").innerHTML = "хлопче";
+document.getElementById("voc-plur").innerHTML = "хлопці";
+break;
+
+case "Церква":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "церкви";
+document.getElementById("gen-plur").innerHTML = "церков";
+document.getElementById("dat-sing").innerHTML = "церкві";
+document.getElementById("dat-plur").innerHTML = "церквам";
+document.getElementById("acu-sing").innerHTML = "церкву";
+document.getElementById("acu-plur").innerHTML = "церкви";
+document.getElementById("instr-sing").innerHTML = "церквою";
+document.getElementById("instr-plur").innerHTML = "церквами";
+document.getElementById("loc-sing").innerHTML = "на/у церкві";
+document.getElementById("loc-plur").innerHTML = "на/у церквах";
+document.getElementById("voc-sing").innerHTML = "церкво";
+document.getElementById("voc-plur").innerHTML = "церкви";
+break;
+
+case "Чашка":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "чашки";
+document.getElementById("gen-plur").innerHTML = "чашок";
+document.getElementById("dat-sing").innerHTML = "чашці";
+document.getElementById("dat-plur").innerHTML = "чашкам";
+document.getElementById("acu-sing").innerHTML = "чашку";
+document.getElementById("acu-plur").innerHTML = "чашки";
+document.getElementById("instr-sing").innerHTML = "чашкою";
+document.getElementById("instr-plur").innerHTML = "чашками";
+document.getElementById("loc-sing").innerHTML = "на/у чашці";
+document.getElementById("loc-plur").innerHTML = "на/у чашках";
+document.getElementById("voc-sing").innerHTML = "чашко";
+document.getElementById("voc-plur").innerHTML = "чашки";
+break;
+
+case "Шаль":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "шалі";
+document.getElementById("gen-plur").innerHTML = "шалей";
+document.getElementById("dat-sing").innerHTML = "шалі";
+document.getElementById("dat-plur").innerHTML = "шалям";
+document.getElementById("acu-sing").innerHTML = "шаль";
+document.getElementById("acu-plur").innerHTML = "шалі";
+document.getElementById("instr-sing").innerHTML = "шаллю";
+document.getElementById("instr-plur").innerHTML = "шалями";
+document.getElementById("loc-sing").innerHTML = "на/у шалі";
+document.getElementById("loc-plur").innerHTML = "на/у шалях";
+document.getElementById("voc-sing").innerHTML = "шале";
+document.getElementById("voc-plur").innerHTML = "шалі";
+break;
+
+case "Шапка":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "шапки";
+document.getElementById("gen-plur").innerHTML = "шапок";
+document.getElementById("dat-sing").innerHTML = "шапці";
+document.getElementById("dat-plur").innerHTML = "шапкам";
+document.getElementById("acu-sing").innerHTML = "шапку";
+document.getElementById("acu-plur").innerHTML = "шапки";
+document.getElementById("instr-sing").innerHTML = "шапкою";
+document.getElementById("instr-plur").innerHTML = "шапками";
+document.getElementById("loc-sing").innerHTML = "на/у шапці";
+document.getElementById("loc-plur").innerHTML = "на/у шапках";
+document.getElementById("voc-sing").innerHTML = "шапко";
+document.getElementById("voc-plur").innerHTML = "шапки";
+break;
+
+case "Шафа":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "шафи";
+document.getElementById("gen-plur").innerHTML = "шаф";
+document.getElementById("dat-sing").innerHTML = "шафі";
+document.getElementById("dat-plur").innerHTML = "шафам";
+document.getElementById("acu-sing").innerHTML = "шафу";
+document.getElementById("acu-plur").innerHTML = "шафи";
+document.getElementById("instr-sing").innerHTML = "шафою";
+document.getElementById("instr-plur").innerHTML = "шафами";
+document.getElementById("loc-sing").innerHTML = "на/у шафі";
+document.getElementById("loc-plur").innerHTML = "на/у шафах";
+document.getElementById("voc-sing").innerHTML = "шафо";
+document.getElementById("voc-plur").innerHTML = "шафи";
+break;
+
+case "Школа":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "школи";
+document.getElementById("gen-plur").innerHTML = "шкіл";
+document.getElementById("dat-sing").innerHTML = "школі";
+document.getElementById("dat-plur").innerHTML = "школам";
+document.getElementById("acu-sing").innerHTML = "школу";
+document.getElementById("acu-plur").innerHTML = "школи";
+document.getElementById("instr-sing").innerHTML = "школою";
+document.getElementById("instr-plur").innerHTML = "школами";
+document.getElementById("loc-sing").innerHTML = "на/у школі";
+document.getElementById("loc-plur").innerHTML = "на/у школах";
+document.getElementById("voc-sing").innerHTML = "школо";
+document.getElementById("voc-plur").innerHTML = "школи";
+break;
+
+case "Шуба":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "шуби";
+document.getElementById("gen-plur").innerHTML = "шуб";
+document.getElementById("dat-sing").innerHTML = "шубі";
+document.getElementById("dat-plur").innerHTML = "шубам";
+document.getElementById("acu-sing").innerHTML = "шубу";
+document.getElementById("acu-plur").innerHTML = "шуби";
+document.getElementById("instr-sing").innerHTML = "шубою";
+document.getElementById("instr-plur").innerHTML = "шубами";
+document.getElementById("loc-sing").innerHTML = "на/у шубі";
+document.getElementById("loc-plur").innerHTML = "на/у шубах";
+document.getElementById("voc-sing").innerHTML = "шубо";
+document.getElementById("voc-plur").innerHTML = "шуби";
+break;
+
+case "Юнак":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "юнака";
+document.getElementById("gen-plur").innerHTML = "юнаків";
+document.getElementById("dat-sing").innerHTML = "юнакові, юнаку";
+document.getElementById("dat-plur").innerHTML = "юнакам";
+document.getElementById("acu-sing").innerHTML = "юнака";
+document.getElementById("acu-plur").innerHTML = "юнаків";
+document.getElementById("instr-sing").innerHTML = "юнаком";
+document.getElementById("instr-plur").innerHTML = "юнаками";
+document.getElementById("loc-sing").innerHTML = "на/у юнаку, юнакові";
+document.getElementById("loc-plur").innerHTML = "на/у юнаках";
+document.getElementById("voc-sing").innerHTML = "юнакаче";
+document.getElementById("voc-plur").innerHTML = "юнаки";
+break;
+
+case "Яблуко":
+document.getElementById("nom-sing").innerHTML = singular.toLowerCase();
+document.getElementById("nom-plur").innerHTML = plural.toLowerCase();
+document.getElementById("gen-sing").innerHTML = "яблука";
+document.getElementById("gen-plur").innerHTML = "яблук";
+document.getElementById("dat-sing").innerHTML = "яблукові, яблуку";
+document.getElementById("dat-plur").innerHTML = "яблукам";
+document.getElementById("acu-sing").innerHTML = "яблуко";
+document.getElementById("acu-plur").innerHTML = "яблука";
+document.getElementById("instr-sing").innerHTML = "яблуком";
+document.getElementById("instr-plur").innerHTML = "яблуками";
+document.getElementById("loc-sing").innerHTML = "яблуку";
+document.getElementById("loc-plur").innerHTML = "яблуках";
+document.getElementById("voc-sing").innerHTML = "яблуко";
+document.getElementById("voc-plur").innerHTML = "яблука";
+break;
 
 
   case "":
@@ -1293,6 +2330,7 @@ break;
     document.getElementById("voc-sing").innerHTML = "";
     document.getElementById("voc-plur").innerHTML = "";
     break;
+
   default: 
     document.getElementById("nom-sing").innerHTML = "";
     document.getElementById("nom-plur").innerHTML = "";
