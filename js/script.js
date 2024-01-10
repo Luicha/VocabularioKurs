@@ -78,7 +78,7 @@ var listaPalabras = [
   ["Піджак", "Saco", "Masculino", "Піджаки"],
   ["Пілот", "Piloto", "Masculino", "Пілоти"],
   ["Пісня", "Canción", "Femenino", "Пісні"],
-  ["Подруга", "Novia", "Femenino", "Подруги"],
+  ["Подруга", "Amiga", "Femenino", "Подруги"],
   ["Поет", "Poeta", "Masculino", "Поети"],
   ["Прапор", "Bandera", "Masculino", "Прапори"],
   ["Радіо", "Radio", "Neutro", "Радіо"],
